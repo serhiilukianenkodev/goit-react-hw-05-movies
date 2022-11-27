@@ -12,7 +12,17 @@ export const getPopularFilms = async () => {
     const responce = await axios.get(
       `${api.baseUrl}trending/movie/day?api_key=${api.key}`
     );
-    console.log(responce.data);
+    return responce.data;
+  } catch (error) {
+    console.log(error.message);
+  }
+};
+
+export const getMovieDetails = async id => {
+  try {
+    const responce = await axios.get(
+      `${api.baseUrl}movie/${id}?api_key=${api.key}`
+    );
     return responce.data;
   } catch (error) {
     console.log(error.message);
