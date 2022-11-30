@@ -1,5 +1,3 @@
-// const keyAPI = '3dd249fbd49ca96ba7400800c6400821'
-// example => https://api.themoviedb.org/3/movie/550?api_key=3dd249fbd49ca96ba7400800c6400821
 import axios from 'axios';
 
 const api = {
